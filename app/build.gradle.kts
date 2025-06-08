@@ -3,7 +3,6 @@ plugins {
     kotlin("android")
     id("com.google.devtools.ksp")
     id("dagger.hilt.android.plugin")
-    kotlin("kapt")
     kotlin("plugin.serialization") version "1.9.22"
 }
 
@@ -98,8 +97,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-}
-
-kapt {
-    correctErrorTypes = true
 }
